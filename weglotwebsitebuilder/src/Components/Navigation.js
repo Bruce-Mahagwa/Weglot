@@ -5,7 +5,7 @@ const Navigation = () => {
         <nav className = "flex justify-between px-2 py-4 md:px-4 lg:px-8 lg:py-8">
             <div>
                 <h2 className = "font-bold text-blue-700 md:text-lg lg:text-2xl xl:text-4xl hover:text-orange-500 cursor-pointer">WEGLOT</h2>
-                <h5 className = "font-bold md:text-base lg:text-lg xl:text-2xl">for webflow</h5>
+                <h5 className = "font-bold md:text-base lg:text-lg xl:text-2xl">for <i>webflow</i></h5>
             </div>
             <div className = "flex gap-4">
                 {/* small screens */}
