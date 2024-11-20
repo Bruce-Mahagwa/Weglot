@@ -1,12 +1,12 @@
-.center_h1 {
-    top: 30%;
+.header_h1 {
+    top: 70%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.center_h2 {
-    top: 40%;
+.header_h2 {
+    top: 90%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
 }
