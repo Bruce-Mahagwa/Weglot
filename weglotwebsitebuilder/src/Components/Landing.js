@@ -2,6 +2,7 @@
 import Navigation from "./Navigation";
 import ImagineLogo from "./ImagineLogo";
 import LandingText from "./LandingText";
+import SideLandingText from "./SideLandingText";
 import ScrollBtn from "./ScrollBtn";
 const Landing = () => {
     return (
@@ -9,6 +10,7 @@ const Landing = () => {
             <Navigation />
             <ImagineLogo />
             <LandingText />
+            <SideLandingText />
             <ScrollBtn />
         </div>
     )
