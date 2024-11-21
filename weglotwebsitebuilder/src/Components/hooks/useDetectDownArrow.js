@@ -14,8 +14,8 @@ export const useDetectDownArrow = () => {
             }
             else if (e.key === "ArrowDown" || e.key === "PageDown") {
                 setCountDownArrowClicked((prev) => prev + 1);
-                if (countDownArrowClicked > 23) {
-                    setCountDownArrowClicked(24)
+                if (countDownArrowClicked > 12) {
+                    setCountDownArrowClicked(12)
                 }
             }            
         }

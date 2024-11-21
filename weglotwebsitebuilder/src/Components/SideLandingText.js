@@ -7,8 +7,8 @@ const SideLandingText = () => {
     const res = useDetectDownArrow();    
     return (
         <>
-        {res >= 10 && res < 11 && <motion.div className = "absolute h-screen pl-12 pt-20 md:pt-24 lg:pt-28 pb-8 w-1/2 bg-indigo-950 left-full text-white"
-            animate = {{left: "50%"}}
+        {res >= 10 && res <= 11 && <motion.div className = "absolute h-screen pl-12 pt-20 md:pt-24 lg:pt-28 pb-8 w-1/2 bg-indigo-950 left-full text-white"
+            animate = {res === 10 ? {left: "50%"} : {left: "100%"}}
             transition = {{duration: 1}}
         >
             <div className = "h-full w-full flex flex-col justify-between">       
