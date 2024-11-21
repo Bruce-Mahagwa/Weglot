@@ -28,5 +28,5 @@ export const useMoveImagineLogoText = () => {
     let new_position_x = mouseX / width;
     let new_position_y = mouseY / height;  
     new_position_x = (1 - new_position_x) > new_position_x ? new_position_x : 1 - new_position_x  
-    return [new_position_x/8, new_position_y/3]    
+    return [-new_position_x/8, -new_position_y/3]    
 }
