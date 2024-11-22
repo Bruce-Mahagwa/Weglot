@@ -3,17 +3,22 @@ import './App.css';
 // pages
 import LandingPage from './Pages/LandingPage';
 import PurchasesPage from "./Pages/PurchasesPage"
-// hooks
-import { useDetectDownArrow } from './Components/hooks/useDetectDownArrow';
+// dependencies
+import {useState} from "react";
 function App() {
-  const res = useDetectDownArrow();
+  const [leaveFirstPage, setLeaveFirstPage] = useState(false); 
   return (
     <div>
-      <LandingPage />
-      {res > 11 && <div>
+      <LandingPage setLeaveFirstPage = {setLeaveFirstPage} />
+      {/* {leaveFirstPage && <div>
+        <PurchasesPage />
+        <PurchasesPage />
+        <PurchasesPage />
+        <PurchasesPage />
+        <PurchasesPage />
         <PurchasesPage />
       </div>
-      }
+      } */}
     </div>
   );
 }

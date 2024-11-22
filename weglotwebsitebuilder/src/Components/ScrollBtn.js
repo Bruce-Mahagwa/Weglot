@@ -1,7 +1,11 @@
+// css
+import "./ImagineLogo.css"
+// files
+import scroll_img from "../assets/Animation - 1732277575644.gif"
 const ScrollBtn = () => {
     return (
-        <div className = "mb-4 mr-auto ml-auto">
-            <h3 className = "font-bold">Scroll up and down using Keyboard</h3>
+        <div className = "fixed scroll_btn">
+            <img src = {scroll_img} alt = "scroll down gif" className="w-8 md:w-12" />
         </div>
     )
 }
