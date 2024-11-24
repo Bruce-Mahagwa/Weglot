@@ -8,7 +8,7 @@ import DummyComponent from "./DummyComponent";
 // hooks
 import {useState, useEffect } from "react";
 
-const Landing = ({setLeaveFirstPage}) => {    
+const Landing = () => {    
     // ensure that onload we reset the page to the topmost position
     useEffect(() => {
         const handleOnLoad = () => {
@@ -35,20 +35,18 @@ const Landing = ({setLeaveFirstPage}) => {
 
     //handle page update and animation
     const [countScrollPosition, setCountScrollPosition] = useState(0);
-
     return (
-        <div className = "relative bg-violet-200" style = {{height: "1300vh"}}>
-            <div className = "w-full h-screen flex flex-col justify-between overflow-hidden relative" id = "landing">
+        <div className = "relative bg-violet-200" style = {{height: "1400vh"}}>
+            <div className = "w-full h-screen flex flex-col justify-between overflow-hidden relative">
                 <Navigation />
                 <ImagineLogo countScrollPosition = {countScrollPosition} />
-                <LandingText countScrollPosition = {countScrollPosition}/>
-                <SideLandingText 
-                    setLeaveFirstPage = {setLeaveFirstPage} 
-                    countScrollPosition = {countScrollPosition} />
-                <ScrollBtn />
+                <LandingText countScrollPosition = {countScrollPosition} />
+                <SideLandingText countScrollPosition = {countScrollPosition} />
+                <ScrollBtn countScrollPosition = {countScrollPosition} />
             </div>
+
             {/* elements for the intersection observer */}
-            <div className = "dummy_screens_container" style = {{height: "1200vh"}}>
+            {<div className = "dummy_screens_container" style = {{height: "1300vh"}}>
                 <DummyComponent root = {root} value = {0} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
                 <DummyComponent root = {root} value = {1} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
                 <DummyComponent root = {root} value = {2} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
@@ -61,7 +59,8 @@ const Landing = ({setLeaveFirstPage}) => {
                 <DummyComponent root = {root} value = {9} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
                 <DummyComponent root = {root} value = {10} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
                 <DummyComponent root = {root} value = {11} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
-            </div>
+                <DummyComponent root = {root} value = {12} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
+            </div>}
         </div>
     )
 }

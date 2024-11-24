@@ -1,8 +1,8 @@
 // components
 import Landing from "../Components/Landing";
-const LandingPage = ({setLeaveFirstPage}) => {
+const LandingPage = () => {
     return (
-        <Landing setLeaveFirstPage = {setLeaveFirstPage}/>
+        <Landing />
     )
 
 }

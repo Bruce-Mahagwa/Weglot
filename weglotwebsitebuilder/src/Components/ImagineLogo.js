@@ -6,7 +6,6 @@ import { useMoveImagineLogoText } from "./hooks/useMoveImagineLogoText";
 import MapComponent from "./MapComponent";
 // dependencies
 import {motion} from "motion/react";
-
 const ImagineLogo = ({countScrollPosition}) => {    
     // x and y coordinates for the transform property
     let [x, y] = useMoveImagineLogoText();
@@ -16,9 +15,9 @@ const ImagineLogo = ({countScrollPosition}) => {
         transform: `translate(${x}%, ${y}%)`
     }
     // end of x and y coordinates for the tranform property that moves the imagine logo headers
-
-    return (        
-        <div className = "fixed slate w-full">
+    return (          
+        <>
+        {countScrollPosition <= 11 && <div className = "fixed slate w-full">
             {countScrollPosition <=1 && <motion.div className="relative flex flex-col gap-20 text-center w-full overflow-hidden"
             initial = {{scale: 0, opacity: 0.5}}
             animate = {{scale: 1, opacity: 1}}
@@ -37,7 +36,8 @@ const ImagineLogo = ({countScrollPosition}) => {
                 className = "font-bold z-50">a multilingual webflow site, without <br/>coding</motion.p>
             </motion.div>}
             <MapComponent countScrollPosition = {countScrollPosition} />
-        </div>
+        </div>}
+        </>
     )
 }
 export default ImagineLogo;

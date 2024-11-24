@@ -1,13 +1,12 @@
 // dependencies
 import {motion, MotionConfig} from "motion/react";
 const MapComponent = ({countScrollPosition}) => {    
-    console.log(countScrollPosition)
     return (
-        <MotionConfig transition = {{duration: 0.5, ease: "easeOut"}}>
-        <motion.div className = "absolute slate"
-        initial = {countScrollPosition === 0 ? {x: "-50%", y: "-50%"} : countScrollPosition === 1 ? {x: "-50%", y: "-50%"} : countScrollPosition === 2 ? {x: "-25%", y: "-65%"} : {}}
-        animate = {countScrollPosition === 1 ? {x: "-25%", y: "-65%"} : countScrollPosition === 2 ? {x: "-5%", y: "-75%"} : {}}  
-        >                
+        <MotionConfig transition = {{duration: 0.5, ease: "easeOut"}}>        
+            <motion.div className = "fixed slate"
+                initial = {countScrollPosition === 0 ? {x: "-50%", y: "-50%"} : countScrollPosition === 1 ? {x: "-50%", y: "-50%"} : countScrollPosition === 2 ? {x: "-25%", y: "-65%"} : {}}
+                animate = {countScrollPosition === 1 ? {x: "-25%", y: "-65%"} : countScrollPosition >= 2 ? {x: "-5%", y: "-75%"} : {}}  
+            >                
                 {countScrollPosition === 0 && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 331.24 672.16" className = "w-1/2 h-1/2">
                     <path fill="#d0d4f4" d="M103.24 58.51l1.82-6.09-44.62 3.05 5.01 5.51 37.79-2.47zM118.2 48.44l3.86-14.26-13.37 6.95.98 3.67 8.53 3.64zM173.42 630.09l-21.33 34.94 17 7.13 16.46-33.17-5.86-10.3-6.27 1.4z"/>
                     <path fill="#d0d4f4" d="M214.56 386l-9.29-15.42L148 332.32l-38 5.86-12-18.46H87.45L87 300.27h13.38l8.15-3.45-11.29-12-18.52.74-9.75 4.08L46 267.16l39.87-14L83.82 270l34.2-3.27 14.82-56.14 7.68 3.92 38.61-41.82-6.55-8.69 28.18-15.1 2.25 3.29 11.57-3.91-3.77-17.46-8.55-12.82-4 6-12.66-21.78 4.81 1.27 3.05-4.25-1.46-12.6 5.87-2.79L191 57.9l-21.5-20.12-6.22 8.69-14-12.9-13.54 12.64 12.81 25.85 8.79 22.69 8.52 2.25L176 99.67l-.42 7.44-26.91 43.79-5.47-2.31 2-8.34-19.86-12L133.29 82l-10.58-37.35-12.56 29.73L95 93.68l2-3.81-41.5 2.39-25.65 28.88L13 168.17l3.79 62.48 16 64.88 8.62-1.18c1.7 5.67 10 32 9.93 32.17l36.51 32.88 31.94-6.11-7.3-11.29 11.77 8-4.47 3.33-4.73 114.55 38 189.73 27.15-40.39 3.39-56.36 2.57.18 23.38-43.66 28-24.6 11.5-80.78-23.88-17zM69.82 290.47l-.13-.13 9.13-.92.11.16z"/>
@@ -41,7 +40,7 @@ const MapComponent = ({countScrollPosition}) => {
                     </g>
                 </svg>}
             </motion.div>
-            </MotionConfig>
+        </MotionConfig>
     )
 }
 export default MapComponent;
