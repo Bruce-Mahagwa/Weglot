@@ -1,22 +1,19 @@
 // hooks
 import { useEffect } from "react";
-import { useDetectDownArrow } from "./hooks/useDetectDownArrow";
 // dependencies
 import {motion} from "motion/react";
-const SideLandingText = ({setLeaveFirstPage}) => {
-    // detect how many clicks 
-    const res = useDetectDownArrow();
+const SideLandingText = ({setLeaveFirstPage, countScrollPosition}) => {    
     useEffect(() => {
         // leave the first landing page
-        if (res >= 11) {
+        if (countScrollPosition >= 11) {
             setLeaveFirstPage(true)
         }
-    }, [res, setLeaveFirstPage])
+    }, [countScrollPosition, setLeaveFirstPage])
         
     return (
         <>
-        {res >= 10 && res <= 11 && <motion.div className = "fixed h-screen pl-12 pt-20 md:pt-24 lg:pt-28 pb-8 w-1/2 bg-indigo-950 left-full text-white"
-            animate = {res === 10 ? {left: "50%"} : {left: "100%"}}
+        {countScrollPosition >= 10 && countScrollPosition <= 11 && <motion.div className = "fixed h-screen pl-12 pt-20 md:pt-24 lg:pt-28 pb-8 w-1/2 bg-indigo-950 left-full text-white"
+            animate = {countScrollPosition === 10 ? {left: "50%"} : {left: "100%"}}
             transition = {{duration: 1}}
         >
             <div className = "h-full w-full flex flex-col justify-between">       
