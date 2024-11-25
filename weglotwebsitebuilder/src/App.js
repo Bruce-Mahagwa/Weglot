@@ -8,11 +8,8 @@ function App() {
     <div>
       <LandingPage />
       <div>
-        <PurchasesPage />
-        <PurchasesPage />
-        <PurchasesPage />
-        <PurchasesPage />
-    </div>
+        <PurchasesPage />        
+      </div>
     </div>
   );
 }

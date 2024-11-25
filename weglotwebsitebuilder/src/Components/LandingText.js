@@ -5,7 +5,7 @@ import "./ImagineLogo.css";
 const LandingText = ({countScrollPosition}) => {    
     return (
         <>            
-            {countScrollPosition >= 3 && <motion.div className = "flex flex-col gap-2 sm:gap-4 fixed bottom-0 w-1/3 px-2 md:px-4 lg:px-8 h-1/3"
+            {countScrollPosition >= 3 && countScrollPosition <= 11 && <motion.div className = "flex flex-col gap-2 sm:gap-4 fixed bottom-0 w-1/3 px-2 md:px-4 lg:px-8 h-1/3"
                 initial = {countScrollPosition <= 7 ? {opacity: 0, bottom: 0} : {}}
                 animate = {countScrollPosition <= 7 ? {opacity: 1, bottom: `${countScrollPosition*6}%`} : {}}
                 transition = {{duration: 0.5}}
