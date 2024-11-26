@@ -1,15 +1,12 @@
 // components
 import CircleSVG from "./Svgs/CircleSVG"
 import RectangleSVG from "./Svgs/RectangleSVG"
-import CursorSVG from "./Svgs/CursorSVG"
 // css
-import "./ImagineLogo.css"
-// hooks
-import { useEffect, useState } from "react"
+import "./ImagineLogo.css";
 const Purchases = () => {
 
     return (
-        <div className = "h-screen w-full flex">
+        <div className = "min-h-screen w-full flex">
              <div className = "w-1/2 relative px-2 py-4 md:px-4 lg:px-8">
                 <div className = "absolute bottom-20 md:bottom-40">
                     <p className = "sm:text-base md:text-lg mb-8">See the power of language</p>
@@ -18,8 +15,7 @@ const Purchases = () => {
                 </div>
              </div> 
 
-             <div className = "relative group bg-gradient-to-tr from-blue-600 via-violet-400 to-violet-500 w-1/2 px-2 pl-8 pb-4 pt-24 md:pt-32 md:px-4 lg:px-8 flex flex-col gap-4 md:grid md:grid-cols-2 special-cursor">
-                {/* <CursorSVG mouseX = {mouseX} mouseY = {mouseY}/> */}
+             <div className = "relative group bg-gradient-to-tr from-blue-600 via-violet-400 to-violet-500 w-1/2 px-2 pl-8 pb-8 pt-24 md:pt-32 md:px-4 lg:px-8 flex flex-col gap-4 md:flex-none md:grid md:grid-cols-2 md:grid-rows-3 special-cursor">
                 <div className = "relative w-full h-12 mx-auto bg-white overflow-hidden p-1 cube-shadow group md:h-32 lg:h-40">
                     <RectangleSVG />
                     <CircleSVG />
