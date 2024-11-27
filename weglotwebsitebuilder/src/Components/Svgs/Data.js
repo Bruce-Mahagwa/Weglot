@@ -1,5 +1,6 @@
 // variables
-const svgs = [<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.62 254.36" className = "w-1/2 h-1/3 lg:h-1/2 mx-auto"> 
+const svgs = [
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.62 254.36" className = "w-1/2 h-1/3 lg:h-1/2 mx-auto"> 
     <defs>
       <linearGradient id="a" x1="22.87" x2="31.78" y1="51.83" y2="42.92" gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="#ff77fc"/>

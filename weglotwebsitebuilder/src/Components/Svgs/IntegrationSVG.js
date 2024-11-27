@@ -29,10 +29,14 @@ const IntegrationSVG = ({countScrollPosition}) => {
         setBg(assignBackground(countScrollPosition));
     }, [countScrollPosition])
 
+
     return (
-      <>
+      <> 
       {countScrollPosition === 1 && <motion.div className = "w-1/2 h-3/4 fixed top-1/4 flex flex-col gap-16 right-0 pt-4 px-2 md:px-4 lg:px-8 md:flex-row justify-between md:items-center justify-center md:h-1/2 md:mb-8 md:mr-4 lg:mr-8"
         style = {{background: `linear-gradient(${bg})`}}
+        initial = {{scale: 0, opacity: 0}}
+        animate = {{scale: 1, opacity: 1}}
+        transition={{duration: 0.5}}
       >        
             {svgs[0]}
             <div className = "pb-12 text-white">
@@ -44,6 +48,9 @@ const IntegrationSVG = ({countScrollPosition}) => {
 
         {countScrollPosition === 2 && <motion.div className = "w-1/2 h-3/4 fixed top-1/4 flex flex-col gap-16 right-0 pt-4 px-2 md:px-4 lg:px-8 md:flex-row justify-between md:items-center justify-center md:h-1/2 md:mb-8 md:mr-4 lg:mr-8"
         style = {{background: `linear-gradient(${bg})`}}
+        initial = {{scale: 0, opacity: 0}}
+        animate = {{scale: 1, opacity: 1}}
+        transition={{duration: 0.5}}
       >        
             {svgs[1]}
             <div className = "pb-12 text-white">
@@ -55,6 +62,9 @@ const IntegrationSVG = ({countScrollPosition}) => {
 
         {countScrollPosition === 3 && <motion.div className = "w-1/2 h-3/4 fixed top-1/4 flex flex-col gap-16 right-0 pt-4 px-2 md:px-4 lg:px-8 md:flex-row justify-between md:items-center justify-center md:h-1/2 md:mb-8 md:mr-4 lg:mr-8"
         style = {{background: `linear-gradient(${bg})`}}
+        initial = {{scale: 0, opacity: 0}}
+        animate = {{scale: 1, opacity: 1}}
+        transition={{duration: 0.5}}
       >        
             {svgs[2]}
             <div className = "pb-12 text-white">
@@ -65,6 +75,9 @@ const IntegrationSVG = ({countScrollPosition}) => {
 
         {countScrollPosition === 4 && <motion.div className = "w-1/2 h-3/4 fixed top-1/4 flex flex-col gap-16 right-0 pt-4 px-2 md:px-4 lg:px-8 md:flex-row justify-between md:items-center justify-center md:h-1/2 md:mb-8 md:mr-4 lg:mr-8"
         style = {{background: `linear-gradient(${bg})`}}
+        initial = {{scale: 0, opacity: 0}}
+        animate = {{scale: 1, opacity: 1}}
+        transition={{duration: 0.5}}
       >        
             {svgs[3]}
             <div className = "pb-12 text-white">
@@ -76,6 +89,9 @@ const IntegrationSVG = ({countScrollPosition}) => {
 
         {countScrollPosition === 5 && <motion.div className = "w-1/2 h-3/4 fixed top-1/4 flex flex-col gap-16 right-0 pt-4 px-2 md:px-4 lg:px-8 md:flex-row justify-between md:items-center justify-center md:h-1/2 md:mb-8 md:mr-4 lg:mr-8"
         style = {{background: `linear-gradient(${bg})`}}
+        initial = {{scale: 0, opacity: 0}}
+        animate = {{scale: 1, opacity: 1}}
+        transition={{duration: 0.5}}
       >        
             {svgs[4]}
             <div className = "pb-12 text-white">
