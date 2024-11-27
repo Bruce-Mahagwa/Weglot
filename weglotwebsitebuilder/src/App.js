@@ -4,7 +4,7 @@ import './App.css';
 import LandingPage from './Pages/LandingPage';
 import PurchasesPage from "./Pages/PurchasesPage"
 import MultiLingualPage from './Pages/MultiLingualPage';
-import ImaginePiePage from './Pages/ImaginePiePage';
+import WeglotIntegrationPage from './Pages/WeglotIntegrationPage';
 function App() {
   return (
     <div>
@@ -12,8 +12,8 @@ function App() {
       <div>
         <PurchasesPage />        
         <MultiLingualPage />
+        <WeglotIntegrationPage /> 
       </div>
-      <ImaginePiePage />
     </div>
   );
 }

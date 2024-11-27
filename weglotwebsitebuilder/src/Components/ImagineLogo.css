@@ -17,6 +17,18 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);    
 }
+.slate_right {
+    top: 50%;
+    right: 0%;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);    
+}
+.slate_left {
+    top: 50%;
+    left: 0%;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);    
+}
 .scroll_btn {
     bottom: 0;
     left: 50%;

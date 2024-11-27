@@ -1,6 +1,7 @@
 // components
 import ImaginePieScene1 from "./ImaginePieScene1";
 import DummyComponent from "./DummyComponent";
+import ImaginePieText from "./ImaginePieText";
 // hooks
 import {useState, useEffect } from "react";
 const ImaginePie = () => {
@@ -24,6 +25,7 @@ const ImaginePie = () => {
         <div className = "relative bg-gradient-to-r from-fuchsia-400 to-purple-500" style = {{height: "500vh"}}>
             <div className = "w-full h-screen overflow-hidden relative">
                 <ImaginePieScene1 countScrollPosition={countScrollPosition} scrollDistance = {scrollDistance} />
+                <ImaginePieText countScrollPosition={countScrollPosition} scrollDistance = {scrollDistance} />
             </div>
             <div style = {{height: "400vh"}} className = "dummy_screens_container_2">
                 <DummyComponent root = {root} value = {-1} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
