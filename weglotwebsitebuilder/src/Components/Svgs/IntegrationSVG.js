@@ -65,7 +65,7 @@ const IntegrationSVG = ({countScrollPosition}) => {
         initial = {{scale: 0, opacity: 0}}
         animate = {{scale: 1, opacity: 1}}
         transition={{duration: 0.5}}
-      >        
+      >           
             {svgs[2]}
             <div className = "pb-12 text-white">
               <h2 className = "font-bold text-base md:text-lg lg:text-xl mb-8">Good for SEO</h2>
@@ -99,7 +99,7 @@ const IntegrationSVG = ({countScrollPosition}) => {
               <p className = "mb-4"><StarHalfIcon /> All components are easily editable with CSS</p>
             </div>
         </motion.div>}
-        </>
+    </>
     )
 }
 export default IntegrationSVG;

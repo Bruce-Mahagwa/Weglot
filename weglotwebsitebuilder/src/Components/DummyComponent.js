@@ -15,7 +15,7 @@ const DummyComponent = ({value, setCountScrollPosition, scrollDistance}) => {
     }, [inView, value, setCountScrollPosition, scrollDistance])    
     
     return (
-        <div className = "w-full" style = {value===12||value=== -1 || value=== -2 ? {height: "10vh"}: {height: "100vh"}} ref = {ref}></div>
+        <div className = "w-full" style = {value===12||value=== -1 || value=== -2 || value === -3? {height: "10vh"}: {height: "100vh"}} ref = {ref}></div>
     )
 }
 export default DummyComponent;

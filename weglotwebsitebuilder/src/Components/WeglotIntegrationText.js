@@ -3,8 +3,7 @@ import {motion} from "motion/react";
 // css
 import "./ImagineLogo.css"
 const WeglotIntegrationText = ({countScrollPosition}) => {
-    console.log(countScrollPosition, "text")
-    return (
+    return (  
         <>
             {countScrollPosition >= 1 && countScrollPosition <= 5 &&
              <div className = "w-1/2 left-0 h-3/4 fixed top-1/4 flex flex-col justify-between md:h-1/2 md:mb-8"> 
