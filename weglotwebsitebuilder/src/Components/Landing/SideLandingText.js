@@ -1,5 +1,6 @@
 // dependencies
 import {motion} from "motion/react";
+
 const SideLandingText = ({countScrollPosition}) => {       
     return (
         <>

@@ -1,11 +1,11 @@
 // components
-import DummyComponent from "./DummyComponent";
-import IntegrationSVG from "./Svgs/IntegrationSVG"
+import DummyComponent from "../DummyComponent";
+import IntegrationSVG from "../Svgs/IntegrationSVG"
 import WeglotIntegrationText from "./WeglotIntegrationText";
 // hooks
 import { useEffect, useState } from "react";
    
-const WeglotIntegration = () => {
+const WeglotIntegration = () => { 
     const root = document.querySelector(".dummy_screens_container_3")
     // handle scroll event
     const [scrollDistance, setScrollDistance] = useState(0); // detects how far a user has scrolled

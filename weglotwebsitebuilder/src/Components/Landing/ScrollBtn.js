@@ -1,7 +1,5 @@
-// css
-import "./ImagineLogo.css"
 // files
-import scroll_img from "../assets/Animation - 1732277575644.gif"
+import scroll_img from "../../assets/Animation - 1732277575644.gif"
 const ScrollBtn = ({countScrollPosition}) => {
     return (
         <>

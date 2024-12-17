@@ -1,5 +1,3 @@
-// css
-import "../ImagineLogo.css"
 const CircleSVG = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.94 106.95" className="absolute slate w-1/2 z-10 opacity-30 transition-all duration-300 group-hover:w-3/4">

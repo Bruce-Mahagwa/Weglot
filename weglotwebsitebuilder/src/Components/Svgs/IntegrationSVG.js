@@ -3,10 +3,9 @@ import {motion} from "motion/react";
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 // hooks
 import { useEffect, useState } from "react";
-// css
-import "../ImagineLogo.css"
 // variables
 import svgs from "./Data";
+
 const IntegrationSVG = ({countScrollPosition}) => {
     const [bg, setBg] = useState("");
     function assignBackground(countScrollPosition) {

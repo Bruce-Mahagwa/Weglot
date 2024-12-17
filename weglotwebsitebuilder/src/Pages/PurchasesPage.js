@@ -1,5 +1,5 @@
 // components
-import Purchases from "../Components/Purchases";
+import Purchases from "../Components/Purchases/Purchases";
 const PurchasesPage = () => {
     return (
         <Purchases />

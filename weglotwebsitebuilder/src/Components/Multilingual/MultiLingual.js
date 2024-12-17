@@ -1,6 +1,7 @@
 // components
 import { Button } from "flowbite-react";
-import EyeSVG from "./Svgs/EyeSVG";
+import EyeSVG from "../Svgs/EyeSVG";
+
 const MultiLingual = () => {
     return (
         <div className = "w-full min-h-screen flex">

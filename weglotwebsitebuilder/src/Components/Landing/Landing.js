@@ -1,10 +1,10 @@
 // components
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 import ImagineLogo from "./ImagineLogo";
 import LandingText from "./LandingText";
 import SideLandingText from "./SideLandingText";
 import ScrollBtn from "./ScrollBtn";
-import DummyComponent from "./DummyComponent";
+import DummyComponent from "../DummyComponent";
 // hooks
 import {useState, useEffect } from "react";
 

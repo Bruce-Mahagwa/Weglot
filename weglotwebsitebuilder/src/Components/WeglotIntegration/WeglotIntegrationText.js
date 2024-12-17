@@ -1,7 +1,6 @@
 // dependencies
 import {motion} from "motion/react";
-// css
-import "./ImagineLogo.css"
+
 const WeglotIntegrationText = ({countScrollPosition}) => {
     return (  
         <>

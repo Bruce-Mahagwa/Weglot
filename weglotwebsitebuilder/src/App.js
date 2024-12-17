@@ -10,12 +10,10 @@ function App() {
   return (
     <div>
       <LandingPage />
-      <div>
-        <PurchasesPage />        
-        <MultiLingualPage />
-        <WeglotIntegrationPage /> 
-        <CircuitPage />
-      </div>
+      <PurchasesPage />        
+      <MultiLingualPage />
+      <WeglotIntegrationPage /> 
+      <CircuitPage />
     </div>
   );
 }

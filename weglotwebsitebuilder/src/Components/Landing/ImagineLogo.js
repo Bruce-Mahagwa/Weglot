@@ -1,11 +1,10 @@
-// css
-import "./ImagineLogo.css";
 // hooks
-import { useMoveImagineLogoText } from "./hooks/useMoveImagineLogoText";
+import { useMoveImagineLogoText } from "../hooks/useMoveImagineLogoText";
 // components
 import MapComponent from "./MapComponent";
 // dependencies
 import {motion} from "motion/react";
+
 const ImagineLogo = ({countScrollPosition}) => {    
     // x and y coordinates for the transform property
     let [x, y] = useMoveImagineLogoText();

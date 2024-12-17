@@ -1,5 +1,5 @@
 // components
-import MultiLingual from "../Components/MultiLingual";
+import MultiLingual from "../Components/Multilingual/MultiLingual"
 const MultiLingualPage = () => {
     return (
         <MultiLingual />

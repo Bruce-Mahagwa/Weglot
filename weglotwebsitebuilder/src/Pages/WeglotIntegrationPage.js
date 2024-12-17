@@ -1,5 +1,5 @@
 // components
-import WeglotIntegration from "../Components/WeglotIntegration";
+import WeglotIntegration from "../Components/WeglotIntegration/WeglotIntegration";
 const WeglotIntegrationPage = () => {
     return (
         <WeglotIntegration />

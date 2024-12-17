@@ -1,10 +1,8 @@
 // components
-import CircleSVG from "./Svgs/CircleSVG"
-import RectangleSVG from "./Svgs/RectangleSVG"
-// css
-import "./ImagineLogo.css";
-const Purchases = () => {
+import CircleSVG from "../Svgs/CircleSVG"
+import RectangleSVG from "../Svgs/RectangleSVG"
 
+const Purchases = () => {
     return (
         <div className = "min-h-screen w-full flex">
              <div className = "w-1/2 relative px-2 py-4 md:px-4 lg:px-8">

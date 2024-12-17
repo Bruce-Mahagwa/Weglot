@@ -1,5 +1,4 @@
-// css
-import "../ImagineLogo.css"
+
 const RectangleSVG = () => {
     return ( 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.95 146.99" className = "absolute slate w-2/5 z-10 opacity-30">

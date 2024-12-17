@@ -1,5 +1,5 @@
 // components
-import CircuitComponent from "../Components/CircuitComponent";
+import CircuitComponent from "../Components/Circuit/CircuitComponent";
 const CircuitPage = () => {
     return (
         <CircuitComponent />
