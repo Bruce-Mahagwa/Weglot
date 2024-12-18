@@ -3,6 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --black: #18154c;
+  --midnight-blue: #240c2e1a;
+  --blue: #3c46fb;
+  --blue-2: #333df0;
+  --misty-rose: #ff8177;
+  --white: white;
+  --blue-violet: #8437fd;
+  --orange: #ffe8ae;
+  --lavender: #e8e9ff;
+  --white-smoke: #e7e4e9;
+  --light-sea-green: #00c2ab;
+  --crimson: #da2b2b;
+  --white-smoke-2: #f9f8f9;
+  --white-2: #ffffff1a;
+  --midnight-blue-2: #240c2e08;
+}
 .header_h1 {
   top: 70%;
   left: 50%;

@@ -1,6 +1,7 @@
 // components
 import DummyComponent from "../DummyComponent";
-import SpinningOrbit from "./SpinningOrbit";
+import SpinningOrbitSVG from "../Svgs/SpinningOrbitSVG";
+import Orb from "./Orb";
 // hooks
 import { useState, useEffect } from "react";
 // variables
@@ -30,9 +31,9 @@ const CircuitComponent = () => {
      //handle page update and animation
      const [countScrollPosition, setCountScrollPosition] = useState(0); 
     return (
-        <div className = "bg-gradient-to-r from-purple-500 to-blue-800 relative" style = {{height: "700vh"}}>
+        <div className = "bg-gradient-to-r from-purple-500 to-blue-800 relative" style = {{height: "800vh"}}>
             <div className = "w-full h-screen overflow-hidden relative">
-                {countScrollPosition >= 1 && <SpinningOrbit countScrollPosition = {countScrollPosition} scrollDistance = {scrollDistance} />}
+                {countScrollPosition >= 1 && <SpinningOrbitSVG countScrollPosition = {countScrollPosition} scrollDistance = {scrollDistance} />}
             </div>
             <div className = "dummy_screens_container4" style = {{height: "600vh"}}>
                 <DummyComponent root = {root} value = {-3} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
@@ -42,6 +43,7 @@ const CircuitComponent = () => {
                 <DummyComponent root = {root} content = {true} elements = {p_content[3]} value = {4} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
                 <DummyComponent root = {root} value = {5} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                
             </div>
+            <Orb />
         </div> 
     )
 }

@@ -35,6 +35,7 @@ const Landing = () => {
 
     //handle page update and animation
     const [countScrollPosition, setCountScrollPosition] = useState(0); 
+    console.log(countScrollPosition)
     return (
         <div className = "relative bg-violet-200" style = {{height: "1400vh"}}>
             <div className = "w-full h-screen flex flex-col justify-between overflow-hidden relative">

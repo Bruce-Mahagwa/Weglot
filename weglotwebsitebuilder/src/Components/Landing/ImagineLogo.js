@@ -14,6 +14,7 @@ const ImagineLogo = ({countScrollPosition}) => {
         transform: `translate(${x}%, ${y}%)`
     }
     // end of x and y coordinates for the tranform property that moves the imagine logo headers
+
     return (          
         <>
         {countScrollPosition <= 11 && <div className = "fixed slate w-full">

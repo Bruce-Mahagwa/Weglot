@@ -1,21 +1,17 @@
 // hooks
-import { useEffect } from "react";
-// dependencies
-import { useInView } from "react-intersection-observer";
-
+import { useEffect, useRef } from "react";
+import { useInView } from "motion/react"
 const DummyComponent = ({value, setCountScrollPosition, scrollDistance, content, elements}) => {  
-    const { ref, inView } = useInView({
-        threshold: 0.15,
-    });
-
-    useEffect(() => {   
-        if (inView) {
+    const ref = useRef();
+    const isInView = useInView(ref);
+    useEffect(() => {
+        if (isInView) {
             setCountScrollPosition(value);
         }
-    }, [inView, value, setCountScrollPosition, scrollDistance])    
+    }, [isInView, setCountScrollPosition, value])
     
     return (
-        <div className = "w-full text-center" style = {value===12 || value=== -1 || value=== -2 || value === -3? {height: "10vh"}: {height: "100vh"}} ref = {ref}>
+        <div ref = {ref} className = "w-full text-center" style = {value===12 || value=== -1 || value=== -2 || value === -3? {height: "10vh"}: {height: "100vh"}}>
             {content && elements}            
         </div>
     )

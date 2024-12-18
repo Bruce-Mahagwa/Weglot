@@ -1,7 +1,9 @@
 // dependencies
 import {motion} from "motion/react";
 
-const SpinningOrbitSVG = ({countScrollPosition}) => {
+const SpinningOrbitSVG = ({countScrollPosition, scrollDistance}) => {
+    const firstNum = Number(String(scrollDistance).substring(0, 2));
+    // const topDistance = firstNum
     return (  
         <>
             {countScrollPosition <= 2 && <motion.svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 593.5 593.5" className = "fixed slate w-3/4 sm:w-1/2 md:w-[40%] xl:w-1/4"
@@ -19,13 +21,16 @@ const SpinningOrbitSVG = ({countScrollPosition}) => {
                 <circle cx="296.75" cy="296.75" r="294.75" fill="none" stroke="url(#a)" stroke-miterlimit="10" stroke-width="4"/>
             </motion.svg>}
 
-            {countScrollPosition >= 3 && countScrollPosition <= 4 && 
+            {countScrollPosition >= 3 && countScrollPosition <= 5 && 
                 <motion.div
-                    initial = {{opacity: 0}}
-                    animate = {{opacity: 1}}
+                    // initial = {countScrollPosition === 3 ? {top: "10%"} : countScrollPosition === 4 ? {top: "20%"} : {}}
+                    // animate = {countScrollPosition === 3 ? {top: "30%"} : countScrollPosition === 4 ? {top: "45%"} : {}}
+                    initial = {{top: "10%"}}
+                    animate = {{top: `${firstNum * 2}%`}}
                     transition = {{duration: 0.5}}
+                    className = "fixed slate flex flex-col items-center justify-center w-1/2 h-1/4 border border-black border-2"
                 >
-                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 593.5 593.5" className = "w-[10%] h-[10%] fixed slate">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 593.5 593.5" className = "w-[30%] h-[30%]">
                         <defs>
                             <linearGradient id="a" x2="593.5" y1="296.75" y2="296.75" gradientUnits="userSpaceOnUse">
                             <stop offset="0" stopColor="#ff77fc"/>
@@ -37,7 +42,7 @@ const SpinningOrbitSVG = ({countScrollPosition}) => {
                     </svg>           
                     
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 92.4" className = "w-[10%] h-[10%] fixed slate top-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 92.4" className = "w-[30%] h-[30%]">
                     <defs>
                         <linearGradient id="a" x1="5.5" x2="5.5" y1="92.4" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#eceeff"/>
