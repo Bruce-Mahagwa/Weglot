@@ -1,12 +1,15 @@
 // components
 import { Button } from "flowbite-react";
 import EyeSVG from "../Svgs/EyeSVG";
+// hooks
+import { useState } from "react";
 
 const MultiLingual = () => {
+    const [language, setLanguage] = useState("")
     return (
         <div className = "w-full min-h-screen flex">
             <div className = "min-h-screen w-1/2 flex flex-col justify-center gap-8 bg-gradient-to-b from-orange-400 via-orange-300 to-orange-200 px-2 py-4 md:px-4 lg:px-8">
-                <EyeSVG />
+                <EyeSVG setLanguage={setLanguage}/>
                 <div>
                     <h1 className = "font-bold text-xl md:text-3xl lg:text-4xl">2.1%</h1>
                     <p className = "text-base md:text-lg lg:text-xl">of internet users can read it</p>
@@ -22,7 +25,7 @@ const MultiLingual = () => {
                     <Button pill outline size = "lg" className="md:w-1/4">Spanish</Button>
                     <Button pill outline size = "lg" className="md:w-1/4">Italian</Button>
                 </div>
-            </div>
+            </div> 
         </div>
     )
 }

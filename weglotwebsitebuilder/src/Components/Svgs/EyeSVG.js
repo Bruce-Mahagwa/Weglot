@@ -1,14 +1,51 @@
-const EyeSVG = () => {
+import { Button } from "flowbite-react";
+import { useEffect, useState } from "react";
+import {motion} from "motion/react";
+
+const EyeSVG = ({setLanguage}) => {    
+    const [xPosition, setXPosition] = useState(0);
+    useEffect(() => {
+        function handleMouseMove(e) {   
+            const mousePosition = e.clientX || e.pageX;
+            setXPosition(mousePosition);
+        }
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+    }, [xPosition, setXPosition]);
+
+    function calculateSkew(xPosition) {
+        const skewDeg = Math.floor(xPosition / 100);
+        if (skewDeg > 12) {
+            return 12;
+        }
+        return skewDeg;
+    }
+    const skewDeg = calculateSkew(xPosition);
+
+    function setLanguageText(e) {
+        const lang_text = {
+            "EN": {statistic: "2.1%", text: "of users can read it"},
+            
+        }
+        const value = e.currentTarget.textContent;
+        console.log(value);
+
+    }
     return (
-        <div className = "flex items-center relative">
-            <ul className = "bg-white list-none h-max w-2/6 lg:w-1/6">
-                <li className = "border-2 border-b-gray-300 py-1 text-center">EN</li>
-                <li className = "border-2 border-b-gray-300 py-1 text-center">ZH</li>
-                <li className = "border-2 border-b-gray-300 py-1 text-center">FR</li>
-                <li className = "border-2 border-b-gray-300 py-1 text-center">IT</li>
+        <motion.div className = "flex items-center relative skew-y-12 sm:pl-12 md:pl-20 lg:pl-36"
+            transition={0.2}
+            initial = {{transform: "skew(0, 12deg)"}}
+            animate = {{transform: `skew(0, ${skewDeg}deg)`}}
+        >
+            <ul className = "bg-white list-none h-max w-2/6 lg:w-1/6 border border-b-gray-300">
+                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center" onClick={setLanguageText}>EN</Button>
+                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center">ZH</Button>
+                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center">FR</Button>
+                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center">ES</Button>
+                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center">DE</Button>
             </ul>
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211.36 254.66" className = "h-max w-2/6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211.36 254.66" className = "h-max w-2/6 md:w-1/2 lg:w-3/4">
                 <defs>
                     <linearGradient id="a" x2="211.36" y1="127.33" y2="127.33" gradientUnits="userSpaceOnUse">
                     <stop offset="0" stopColor="#e9eafe" stopOpacity="0"/>
@@ -31,7 +68,7 @@ const EyeSVG = () => {
                 </g>
             </svg>
 
-        </div>
+        </motion.div>
     )
 }
 export default EyeSVG;
