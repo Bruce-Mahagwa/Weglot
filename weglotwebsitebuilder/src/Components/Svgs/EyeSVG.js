@@ -1,8 +1,7 @@
-import { Button } from "flowbite-react";
 import { useEffect, useState } from "react";
 import {motion} from "motion/react";
 
-const EyeSVG = ({setLanguage}) => {    
+const EyeSVG = ({shortFormLang}) => {    
     const [xPosition, setXPosition] = useState(0);
     useEffect(() => {
         function handleMouseMove(e) {   
@@ -22,27 +21,27 @@ const EyeSVG = ({setLanguage}) => {
     }
     const skewDeg = calculateSkew(xPosition);
 
-    function setLanguageText(e) {
-        const lang_text = {
-            "EN": {statistic: "2.1%", text: "of users can read it"},
-            
-        }
-        const value = e.currentTarget.textContent;
-        console.log(value);
+    useEffect(() => {
+        const list_items = document.querySelectorAll("li");
+        list_items.forEach((item) => {
+            if (item.textContent === shortFormLang) {
+                item.classList.remove("text-gray-300");
+            }
+        })
+    }, [shortFormLang])
 
-    }
     return (
         <motion.div className = "flex items-center relative skew-y-12 sm:pl-12 md:pl-20 lg:pl-36"
             transition={0.2}
             initial = {{transform: "skew(0, 12deg)"}}
             animate = {{transform: `skew(0, ${skewDeg}deg)`}}
         >
-            <ul className = "bg-white list-none h-max w-2/6 lg:w-1/6 border border-b-gray-300">
-                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center" onClick={setLanguageText}>EN</Button>
-                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center">ZH</Button>
-                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center">FR</Button>
-                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center">ES</Button>
-                <Button outline color = "gray" className = "w-full rounded-none border-0 border-b-gray-300 border py-1 text-center">DE</Button>
+            <ul className = "bg-white list-none h-max w-2/6 border border-b-gray-300">
+                <li className = "w-full border-b-gray-300 border py-1 md:py-2 lg:py-4 text-center text-gray-300 font-bold">EN</li>
+                <li className = "w-full border-b-gray-300 border py-1 md:py-2 lg:py-4 text-center text-gray-300 font-bold">ZH</li>
+                <li className = "w-full border-b-gray-300 border py-1 md:py-2 lg:py-4 text-center text-gray-300 font-bold">FR</li>
+                <li className = "w-full border-b-gray-300 border py-1 md:py-2 lg:py-4 text-center text-gray-300 font-bold">ES</li>
+                <li className = "w-full border-b-gray-300 border py-1 md:py-2 lg:py-4 text-center font-bold">DE</li>
             </ul>
             
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211.36 254.66" className = "h-max w-2/6 md:w-1/2 lg:w-3/4">
