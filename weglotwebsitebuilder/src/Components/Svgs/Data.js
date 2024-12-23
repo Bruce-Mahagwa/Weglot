@@ -1,6 +1,6 @@
 // variables
 const svgs = [
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.62 254.36" className = "w-1/2 h-1/3 lg:h-1/2 mx-auto"> 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.62 254.36" className = "w-1/2 h-96 mx-auto"> 
     <defs>
       <linearGradient id="a" x1="22.87" x2="31.78" y1="51.83" y2="42.92" gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="#ff77fc"/>
@@ -20,7 +20,7 @@ const svgs = [
     <circle cx="147.94" cy="207.39" r="35.75" fill="url(#b)"/>
     <path fill="url(#c)" d="M27.49 74.22h71.17v77.44H27.49z"/>
   </svg>,
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.06 63.47" className = "w-1/2 h-1/3 lg:h-1/2 mx-auto">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.06 63.47" className = "w-1/2 h-96 mx-auto">
   <path fill="#3c46fb" d="M10.2 42.11h44.63v3.14H10.2zM10.2 53.1h20.23v3.14H10.2zM35.31 53.1H47.2v3.14H35.31z"/>
   <path fill="#fff" d="M0 34.99h61.58v28.48H0z" opacity=".2"/>
   <path fill="#fff" d="M154.06 1H92.48L0 34.99v28.48h61.59l92.47-33.99V1z" opacity=".2"/>
@@ -53,7 +53,7 @@ const svgs = [
 <path fill="#3c46fb" d="M76.19 48.87h6.55v14.05h-6.55z"/>
 <path fill="url(#a)" d="M0 74.6l14.11 14.12V74.6H0z"/>
 </svg>, 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.3 90.44" className = "w-1/2 h-1/3 lg:h-1/2 mx-auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.3 90.44" className = "w-1/2 h-96 mx-auto">
 <path fill="#3c46fb" d="M116.57 66.01h50.76v3.14h-50.76z"/>
 <path fill="none" stroke="#3c46fb" stroke-miterlimit="10" stroke-width="4" d="M174.92 44.87l-8.33 8.33-8.34-8.33-8.34 8.33-8.33-8.33-8.34 8.33-8.33-8.33-8.34 8.33"/>
 <path fill="#3c46fb" d="M116.57 77h23.01v3.14h-23.01zM145.13 77h13.52v3.14h-13.52z"/>
@@ -62,7 +62,7 @@ const svgs = [
 <path fill="#3c46fb" d="M11.2 34.22h50.76v3.14H11.2zM61.21 24.24l-8.33-8.34-8.34 8.34-8.34-8.34-8.33 8.34-8.34-8.34-6.92 6.93L9.78 20l9.75-9.75 8.34 8.33 8.33-8.33 8.34 8.33 8.34-8.33 8.33 8.33 6.92-6.92 2.83 2.83-9.75 9.75zM11.2 45.21h23.01v3.14H11.2zM39.75 45.21h13.52v3.14H39.75z"/>
 <path fill="#3c46fb" d="M106.95 34.22h75.35v56.22h-75.35z" opacity=".11"/>
 </svg>,
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.95 145.4" className = "w-1/2 h-1/3 lg:h-1/2 mx-auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.95 145.4" className = "w-1/2 h-96 mx-auto">
 <defs>
   <clipPath id="a">
     <circle cx="52.43" cy="112.39" r="15.1" fill="none"/>
@@ -129,7 +129,7 @@ const svgs = [
   <path fill="#fff" d="M73.89 50.38h54.42v3.37H73.89zM127.51 39.69l-8.93-8.94-8.94 8.94-8.94-8.94-8.93 8.94-8.94-8.94-7.42 7.42-3.03-3.03 10.45-10.46 8.94 8.94 8.93-8.94 8.94 8.94 8.94-8.94 8.93 8.94 7.42-7.42 3.04 3.03-10.46 10.46zM73.89 62.17h24.66v3.37H73.89zM104.51 62.17h14.5v3.37h-14.5z"/>
 </g>
 </svg>,
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.88 276.9" className = "w-1/2 h-1/3 lg:h-1/2 mx-auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.88 276.9" className = "w-1/2 h-96 mx-auto">
 <defs>
   <linearGradient id="a" x1="37.43" x2="95.94" y1="149.68" y2="149.68" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#ff8177"/>

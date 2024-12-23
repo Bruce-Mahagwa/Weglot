@@ -29,14 +29,14 @@ const MultiLingual = () => {
     }
 
     const counterRef = useRef("");
-    const count = language - 3;
+    const count = language - 1;
     useEffect(() => {
         if (language) {
             const controls = animate(count, language, {
                 duration: 2,
                 ease: "linear",
                 onUpdate(value) {
-                    counterRef.current.textContent = value.toFixed(2);
+                    counterRef.current.textContent = value.toFixed(2) + "%";
                 }
             })
             return () => controls.stop();
