@@ -73,8 +73,24 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.brown_1 {
+  background: rgba(166, 145, 92, 1);
+  width: min(90vw, 90vh);
+  height: min(90vw, 90vh);
+}
+.brown_2 {
+  background: rgba(227, 186, 143, 1);
+}
+.brown_3 {
+  background: rgba(243, 225, 107, 1);
+}
 @media screen and (min-width: 768px) {
   .special-cursor {
       cursor: url("./assets/pointhand.svg"), auto;   
+  }
+}
+@media screen and (min-width: 400px) {
+  .language_switcher {
+    display: flex;
   }
 }

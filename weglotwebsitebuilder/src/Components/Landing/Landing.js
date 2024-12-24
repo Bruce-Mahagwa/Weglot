@@ -47,19 +47,19 @@ const Landing = () => {
 
             {/* elements for the intersection observer */}
             {<div className = "dummy_screens_container" style = {{height: "1300vh"}}>
-                <DummyComponent root = {root} value = {0} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {1} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {2} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {3} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {4} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {5} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {6} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {7} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {8} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {9} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
-                <DummyComponent root = {root} value = {10} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
-                <DummyComponent root = {root} value = {11} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
-                <DummyComponent root = {root} value = {12} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
+                <DummyComponent value = {0} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {1} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {2} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {3} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {4} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {5} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {6} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {7} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {8} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {9} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
+                <DummyComponent value = {10} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
+                <DummyComponent value = {11} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
+                <DummyComponent height= {"10vh"} value = {12} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
             </div>}
         </div>
     )

@@ -4,13 +4,6 @@ import SpinningOrbitSVG from "../Svgs/SpinningOrbitSVG";
 import Orb from "./Orb";
 // hooks
 import { useState, useEffect } from "react";
-// variables
-const p_content = [
-    <p className = "text-white font-bold sm:text-base md:text-lg">the web today is <br/><span className = "text-base sm:text-lg lg:text-xl">Global</span></p>,
-    <p className = "text-white font-bold sm:text-base md:text-lg">the web today is <br/><span className = "text-base sm:text-lg lg:text-xl">Connected</span></p>,
-    <p className = "text-white font-bold sm:text-base md:text-lg">the web today is <br/><span className = "text-base sm:text-lg lg:text-xl">Complex</span></p>,
-    <p className = "text-white font-bold sm:text-base md:text-lg">but it doesn't have to be <br/><span className = "text-base sm:text-lg lg:text-xl">Complicated</span></p>
-]
 
 const CircuitComponent = () => {
 
@@ -36,14 +29,22 @@ const CircuitComponent = () => {
                 {countScrollPosition >= 1 && <SpinningOrbitSVG countScrollPosition = {countScrollPosition} scrollDistance = {scrollDistance} />}
             </div>
             <div className = "dummy_screens_container4" style = {{height: "600vh"}}>
-                <DummyComponent root = {root} value = {-3} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} content = {true} elements = {p_content[0]} value = {1} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} content = {true} elements = {p_content[1]} value = {2} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} content = {true} elements = {p_content[2]} value = {3} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} content = {true} elements = {p_content[3]} value = {4} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
-                <DummyComponent root = {root} value = {5} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                
+                <DummyComponent value = {-3} height = {"10vh"} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
+                <DummyComponent value = {1} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition}>
+                    <p className = "text-white font-bold sm:text-base md:text-lg">the web today is <br/><span className = "text-base sm:text-lg lg:text-xl">Global</span></p>
+                </DummyComponent>
+                <DummyComponent value = {2} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition}>
+                    <p className = "text-white font-bold sm:text-base md:text-lg">the web today is <br/><span className = "text-base sm:text-lg lg:text-xl">Connected</span></p>
+                </DummyComponent>
+                <DummyComponent value = {3} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition}>
+                    <p className = "text-white font-bold sm:text-base md:text-lg">the web today is <br/><span className = "text-base sm:text-lg lg:text-xl">Complex</span></p>
+                </DummyComponent>
+                <DummyComponent value = {4} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition}>
+                    <p className = "text-white font-bold sm:text-base md:text-lg">but it doesn't have to be <br/><span className = "text-base sm:text-lg lg:text-xl">Complicated</span></p>
+                </DummyComponent>
+                <DummyComponent value = {5} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                
             </div>
-            <Orb />
+            <Orb /> 
         </div> 
     )
 }

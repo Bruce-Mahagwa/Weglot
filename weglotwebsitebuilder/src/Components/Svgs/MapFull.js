@@ -4,7 +4,7 @@ const MapFull = () => {
             <defs>
                 <linearGradient id="a" x1="-4829.45" x2="-4659.9" y1="-3660.56" y2="-3660.56" gradientTransform="rotate(45 -6850.965 4041.767)" gradientUnits="userSpaceOnUse">
                 <stop offset="0" stopColor="#f8f8fd"/>
-                <stop offset=".63" stopColor="#e9eafe"/>
+                <stop offset=".63" stopColor="#e9eafe"/>  
                 <stop offset=".99" stopColor="#e9eafe"/>
                 <stop offset="1" stopColor="#e9eafe"/>
                 </linearGradient>

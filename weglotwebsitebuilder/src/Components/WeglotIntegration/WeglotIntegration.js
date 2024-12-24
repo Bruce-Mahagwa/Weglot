@@ -3,8 +3,7 @@ import IntegrationSVG from "../Svgs/IntegrationSVG"
 import WeglotIntegrationText from "./WeglotIntegrationText";
 import DummyComponent from "../DummyComponent";
 // hooks
-import { useEffect, useState, useRef } from "react";
-import { useInView } from "motion/react";
+import { useEffect, useState } from "react";
 
 const WeglotIntegration = () => { 
     // handle scroll event
@@ -25,20 +24,19 @@ const WeglotIntegration = () => {
 
     // handle dummy component
     const [countScrollPosition,setCountScrollPosition] = useState(-2);
-    console.log(countScrollPosition)
     return ( 
         <div className = "w-full">
-            <DummyComponent value = {-1} height={"600px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance} />            
-            {countScrollPosition > -1 && countScrollPosition <= 4 && <div className = "flex h-screen fixed top-40">        
+            <DummyComponent value = {-1} height={"700px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance} />            
+            {countScrollPosition > -1 && countScrollPosition <= 4 && <div className = "flex h-screen w-full fixed top-1/4">        
                 <WeglotIntegrationText currentIndex = {currentIndex}/>  
                 <IntegrationSVG scrollDistance={scrollDistance} setCurrentIndex = {setCurrentIndex} countScrollPosition = {countScrollPosition} />              
             </div>}
             <DummyComponent value = {0} height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
-            <DummyComponent value = {1} amount = "all" height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
-            <DummyComponent value = {2} amount = "all" height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
-            <DummyComponent value = {3} amount = "all" height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
-            <DummyComponent value = {4} amount = "all" height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
-            <DummyComponent value = {5} amount = "all" height = {"10px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
+            <DummyComponent value = {1}  height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
+            <DummyComponent value = {2}  height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
+            <DummyComponent value = {3}  height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
+            <DummyComponent value = {4}  height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
+            <DummyComponent value = {5} amount = "all" height = {"100px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
         </div>
     )
 }

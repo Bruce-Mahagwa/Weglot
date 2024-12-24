@@ -17,7 +17,7 @@ const DummyComponent = ({value, setCountScrollPosition, scrollDistance, children
         dummyHeight = height;
     }
     return (
-        <div ref = {ref} className = "w-full text-center" style = {value===12 ? {height: "10vh"}: {height: dummyHeight}}>
+        <div ref = {ref} className = "w-full text-center" style = {{height: dummyHeight}}>
             {children}
         </div>
     )

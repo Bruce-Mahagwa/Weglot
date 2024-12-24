@@ -5,7 +5,8 @@ import LandingPage from './Pages/LandingPage';
 import PurchasesPage from "./Pages/PurchasesPage"
 import MultiLingualPage from './Pages/MultiLingualPage';
 import WeglotIntegrationPage from './Pages/WeglotIntegrationPage';
-import CircuitPage from './Pages/CircuitPage';
+import LanguageSwitcherPage from './Pages/LanguageSwitcherPage';
+import LeafPage from "./Pages/LeafPage";
 function App() {
   return (
     <div>
@@ -13,7 +14,8 @@ function App() {
       <PurchasesPage />        
       <MultiLingualPage />
       <WeglotIntegrationPage /> 
-      <CircuitPage />
+      <LanguageSwitcherPage />
+      <LeafPage />
     </div>
   );
 }
