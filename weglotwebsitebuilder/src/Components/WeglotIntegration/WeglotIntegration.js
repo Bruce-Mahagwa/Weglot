@@ -26,17 +26,15 @@ const WeglotIntegration = () => {
     const [countScrollPosition,setCountScrollPosition] = useState(-2);
     return ( 
         <div className = "w-full">
-            <DummyComponent value = {-1} height={"700px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance} />            
-            {countScrollPosition > -1 && countScrollPosition <= 4 && <div className = "flex h-screen w-full fixed top-1/4">        
+            <div className = "flex h-screen w-full pt-12 sticky top-1/4">        
                 <WeglotIntegrationText currentIndex = {currentIndex}/>  
                 <IntegrationSVG scrollDistance={scrollDistance} setCurrentIndex = {setCurrentIndex} countScrollPosition = {countScrollPosition} />              
-            </div>}
+            </div>
             <DummyComponent value = {0} height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
             <DummyComponent value = {1}  height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
             <DummyComponent value = {2}  height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
             <DummyComponent value = {3}  height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
             <DummyComponent value = {4}  height = {"390px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
-            <DummyComponent value = {5} amount = "all" height = {"100px"} setCountScrollPosition = {setCountScrollPosition} scrollDistance={scrollDistance}/>
         </div>
     )
 }

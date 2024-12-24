@@ -35,9 +35,9 @@ const Landing = () => {
 
     //handle page update and animation
     const [countScrollPosition, setCountScrollPosition] = useState(0); 
-    return (
+    return ( 
         <div className = "relative bg-violet-200" style = {{height: "1400vh"}}>
-            <div className = "w-full h-screen flex flex-col justify-between overflow-hidden relative">
+            <div className = "w-full h-screen flex flex-col justify-between overflow-hidden sticky">
                 <Navigation />
                 <ImagineLogo countScrollPosition = {countScrollPosition} />
                 <LandingText countScrollPosition = {countScrollPosition} />
