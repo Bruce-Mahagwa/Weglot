@@ -19,7 +19,7 @@ const WeglotIntegrationText = ({currentIndex}) => {
     const isInView = useInView(ref, { once: true });
 
     return (  
-        <> 
+        <>  
              <div className = "h-96 w-1/2 flex flex-col justify-between"> 
                 <motion.h1 className = "font-bold text-blue-700 text-4xl sm:text-7xl lg:text-8xl xl:text-9xl px-2 md:px-4 lg:px-8">                    
                     {splittedText.map((current, i) => (

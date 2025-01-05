@@ -24,7 +24,7 @@ const WeglotIntegration = () => {
 
     // handle dummy component
     const [countScrollPosition,setCountScrollPosition] = useState(-2);
-    return ( 
+    return (  
         <div className = "w-full">
             <div className = "flex h-screen w-full pt-12 sticky top-1/4">        
                 <WeglotIntegrationText currentIndex = {currentIndex}/>  

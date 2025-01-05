@@ -4,15 +4,20 @@ import { Button } from "flowbite-react";
 import {motion} from "motion/react";
 const Navigation = () => {
     return (
-        <motion.nav className = "flex justify-between px-2 py-4 md:px-4 lg:px-8 lg:py-8 z-50 fixed w-full"
+        <motion.nav className = "flex justify-between px-2 py-4 md:px-4 lg:px-8 lg:py-8 fixed top-0 w-full"
         initial = {{opacity: 0}} animate = {{opacity: 1}} 
         transition={{ duration: 0.4, delay: 0.5, ease: "easeOut" }}
+        style = {{zIndex: 200000}}
         >
-            <div>
+            <div
+                style = {{zIndex: 200000}}
+            >
                 <h2 className = "font-bold text-blue-700 md:text-lg lg:text-2xl xl:text-4xl hover:text-orange-500 cursor-pointer">WEGLOT</h2>
                 <h5 className = "font-bold md:text-base lg:text-lg xl:text-2xl">for <i>webflow</i></h5>
             </div>
-            <div className = "flex gap-4">
+            <div className = "flex gap-4"
+                style = {{zIndex: 200000}}
+            >
                 {/* small screens */}
                 <Button pill color = "blue" className = "block sm:hidden md:hidden lg:hidden outline hover:outline-4 hover:outline-orange-500" size = "sm">EN</Button>
                 <Button pill color = "blue" className = "block sm:hidden md:hidden lg:hidden outline hover:outline-4 hover:outline-orange-500" size = "sm">Try Weglot <i>&nbsp;for free</i></Button>

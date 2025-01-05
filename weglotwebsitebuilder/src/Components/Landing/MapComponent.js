@@ -1,7 +1,7 @@
 // dependencies
 import {motion, MotionConfig} from "motion/react";
 const MapComponent = ({countScrollPosition}) => {    
-    return (
+    return ( 
         <MotionConfig transition = {{duration: 0.5, ease: "easeOut"}}>        
             <motion.div className = "fixed slate"
                 initial = {countScrollPosition === 0 ? {x: "-50%", y: "-50%"} : countScrollPosition === 1 ? {x: "-50%", y: "-50%"} : countScrollPosition === 2 ? {x: "-25%", y: "-65%"} : {}}

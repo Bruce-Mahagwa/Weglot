@@ -11,7 +11,7 @@ import {useState, useEffect } from "react";
 const Landing = () => {    
     // ensure that onload we reset the page to the topmost position
     useEffect(() => {
-        const handleOnLoad = () => {
+        const handleOnLoad = () => { 
             window.scrollTo(0, 0);
         }
         window.addEventListener("beforeunload", handleOnLoad);
