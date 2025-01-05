@@ -1,8 +1,8 @@
 const LanguageSwitcher = () => {
-    return (
+    return ( 
         <div className = "language_switcher w-full relative bg-slate-100 justify-between gap-4 px-2 py-4 md:px-4 lg:px-8 lg:py-8"
         >
-            <div className  = "w-1/2 font-bold sticky h-max top-96 pb-96 text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl">
+            <div className  = "lanuage_switcher_intro w-1/2 font-bold h-max top-96 text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl">
                 <h1>We designed and animated Webflow language switcher elements just for you</h1>                
             </div>
             <div className = "w-1/2 grid self-start md:grid-cols-2 justify-items-end gap-4">
