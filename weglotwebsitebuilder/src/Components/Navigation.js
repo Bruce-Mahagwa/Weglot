@@ -4,7 +4,7 @@ import { Button } from "flowbite-react";
 import {motion} from "motion/react";
 const Navigation = () => {
     return (
-        <motion.nav className = "flex justify-between px-2 py-4 md:px-4 lg:px-8 lg:py-8 fixed top-0 w-full"
+        <motion.nav className = "flex justify-between px-2 py-4 md:px-4 lg:px-8 lg:py-8 sticky top-0 w-full"
         initial = {{opacity: 0}} animate = {{opacity: 1}} 
         transition={{ duration: 0.4, delay: 0.5, ease: "easeOut" }}
         style = {{zIndex: 200000}}

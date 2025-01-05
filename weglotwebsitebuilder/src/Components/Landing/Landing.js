@@ -1,5 +1,4 @@
 // components
-import Navigation from "../Navigation";
 import ImagineLogo from "./ImagineLogo";
 import LandingText from "./LandingText";
 import SideLandingText from "./SideLandingText";
@@ -8,15 +7,7 @@ import DummyComponent from "../DummyComponent";
 // hooks
 import {useState, useEffect } from "react";
 
-const Landing = () => {    
-    // ensure that onload we reset the page to the topmost position
-    // useEffect(() => { 
-    //     const handleOnLoad = () => { 
-    //         window.scrollTo(0, 0);
-    //     }
-    //     window.addEventListener("beforeunload", handleOnLoad);
-    //     return () => window.removeEventListener("onbeforeunload", handleOnLoad);
-    // }, [])
+const Landing = () => {        
 
    // handle scroll event
    const [scrollDistance, setScrollDistance] = useState(0); // detects how far a user has scrolled
@@ -35,7 +26,6 @@ const Landing = () => {
     const [countScrollPosition, setCountScrollPosition] = useState(0); 
     return (  
         <div className = "relative bg-violet-200" style = {{height: "1300vh"}}>
-            <Navigation />
             <div className = "w-full h-screen flex flex-col justify-between overflow-hidden sticky top-0">
                 <ImagineLogo countScrollPosition = {countScrollPosition} />
                 <LandingText countScrollPosition = {countScrollPosition} />

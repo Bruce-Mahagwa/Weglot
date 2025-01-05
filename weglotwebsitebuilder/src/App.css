@@ -20,6 +20,11 @@
   --white-2: #ffffff1a;
   --midnight-blue-2: #240c2e08;
 }
+.top_container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .header_h1 {
   top: 70%;
   left: 50%;
