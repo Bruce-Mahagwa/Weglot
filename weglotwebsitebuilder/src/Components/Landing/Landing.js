@@ -10,15 +10,13 @@ import {useState, useEffect } from "react";
 
 const Landing = () => {    
     // ensure that onload we reset the page to the topmost position
-    useEffect(() => {
-        const handleOnLoad = () => { 
-            window.scrollTo(0, 0);
-        }
-        window.addEventListener("beforeunload", handleOnLoad);
-        return () => window.removeEventListener("onbeforeunload", handleOnLoad);
-    }, [])
-
-   const root = document.querySelector(".dummy_screens_container")
+    // useEffect(() => { 
+    //     const handleOnLoad = () => { 
+    //         window.scrollTo(0, 0);
+    //     }
+    //     window.addEventListener("beforeunload", handleOnLoad);
+    //     return () => window.removeEventListener("onbeforeunload", handleOnLoad);
+    // }, [])
 
    // handle scroll event
    const [scrollDistance, setScrollDistance] = useState(0); // detects how far a user has scrolled
@@ -35,10 +33,10 @@ const Landing = () => {
 
     //handle page update and animation
     const [countScrollPosition, setCountScrollPosition] = useState(0); 
-    return ( 
-        <div className = "relative bg-violet-200" style = {{height: "1400vh"}}>
-                <Navigation />
-            <div className = "w-full h-screen flex flex-col justify-between overflow-hidden sticky">
+    return (  
+        <div className = "relative bg-violet-200" style = {{height: "1300vh"}}>
+            <Navigation />
+            <div className = "w-full h-screen flex flex-col justify-between overflow-hidden sticky top-0">
                 <ImagineLogo countScrollPosition = {countScrollPosition} />
                 <LandingText countScrollPosition = {countScrollPosition} />
                 <SideLandingText countScrollPosition = {countScrollPosition} />
@@ -46,7 +44,7 @@ const Landing = () => {
             </div>
 
             {/* elements for the intersection observer */}
-            {<div className = "dummy_screens_container" style = {{height: "1300vh"}}>
+            {<div className = "dummy_screens_container" style = {{height: "1200vh"}}>
                 <DummyComponent value = {0} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
                 <DummyComponent value = {1} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
                 <DummyComponent value = {2} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />
@@ -59,9 +57,17 @@ const Landing = () => {
                 <DummyComponent value = {9} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
                 <DummyComponent value = {10} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
                 <DummyComponent value = {11} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
-                <DummyComponent height= {"10vh"} value = {12} scrollDistance = {scrollDistance} setCountScrollPosition = {setCountScrollPosition} />                                
             </div>}
         </div>
     )
 }
 export default Landing;
+
+{/* <div className = "relative bg-violet-200" style = {{height: "1400vh"}}>
+<Navigation />
+<div className = "w-full h-screen flex flex-col justify-between overflow-hidden sticky">
+    <ImagineLogo countScrollPosition = {countScrollPosition} />
+    <LandingText countScrollPosition = {countScrollPosition} />
+    <SideLandingText countScrollPosition = {countScrollPosition} />
+    <ScrollBtn countScrollPosition = {countScrollPosition} />
+</div> */}
